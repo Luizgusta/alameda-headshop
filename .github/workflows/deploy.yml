@@ -22,10 +22,8 @@ jobs:
       - name: Baixar o código
         uses: actions/checkout@v4
 
-      - name: Configurar pnpm
+      - name: Configurar pnpm pelo packageManager do projeto
         uses: pnpm/action-setup@v4
-        with:
-          version: 10
 
       - name: Configurar Node.js
         uses: actions/setup-node@v4
