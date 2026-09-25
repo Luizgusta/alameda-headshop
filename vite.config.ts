@@ -204,8 +204,8 @@ function vitePluginStorageProxy(): Plugin {
 }
 
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
-
 export default defineConfig({
+  base: "/alameda-headshop/",
   plugins,
   resolve: {
     alias: {

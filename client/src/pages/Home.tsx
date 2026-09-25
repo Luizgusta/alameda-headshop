@@ -14,16 +14,16 @@ import {
 } from "lucide-react";
 
 const categories = [
-  { label: "Sedas & papéis", image: "/manus-storage/alameda-category-sedas_9d7c0d9b.jpg", tone: "from-[#6b4f35]" },
-  { label: "Acessórios", image: "/manus-storage/alameda-category-acessorios_c083ca31.jpg", tone: "from-[#1e312a]" },
-  { label: "Tabacos", image: "/manus-storage/alameda-category-tabaco_fb5db629.jpg", tone: "from-[#8c5534]" },
+  { label: "Sedas & papéis", image: "./images/alameda-category-sedas.jpg", tone: "from-[#6b4f35]" },
+  { label: "Acessórios", image: "./images/alameda-category-acessorios.jpg", tone: "from-[#1e312a]" },
+  { label: "Tabacos", image: "./images/alameda-category-tabaco.jpg", tone: "from-[#8c5534]" },
 ];
 
 const products = [
-  { name: "Piteira Alameda Large", category: "Acessórios", price: "R$ 8,00", oldPrice: "", image: "/manus-storage/alameda-category-acessorios_c083ca31.jpg", tag: "Alameda" },
-  { name: "Seda Papelito Brown King Size", category: "Sedas", price: "R$ 4,00", oldPrice: "", image: "/manus-storage/alameda-category-sedas_9d7c0d9b.jpg", tag: "Essencial" },
-  { name: "Tabaco Santorini 25g", category: "Tabacos", price: "R$ 25,00", oldPrice: "", image: "/manus-storage/alameda-category-tabaco_fb5db629.jpg", tag: "Curadoria" },
-  { name: "Kit Brown + Piteira", category: "Combos", price: "R$ 7,00", oldPrice: "R$ 9,00", image: "/manus-storage/alameda-category-sedas_9d7c0d9b.jpg", tag: "Oferta" },
+  { name: "Piteira Alameda Large", category: "Acessórios", price: "R$ 8,00", oldPrice: "", image: "./images/alameda-category-acessorios.jpg", tag: "Alameda" },
+  { name: "Seda Papelito Brown King Size", category: "Sedas", price: "R$ 4,00", oldPrice: "", image: "./images/alameda-category-sedas.jpg", tag: "Essencial" },
+  { name: "Tabaco Santorini 25g", category: "Tabacos", price: "R$ 25,00", oldPrice: "", image: "./images/alameda-category-tabaco.jpg", tag: "Curadoria" },
+  { name: "Kit Brown + Piteira", category: "Combos", price: "R$ 7,00", oldPrice: "R$ 9,00", image: "./images/alameda-category-sedas.jpg", tag: "Oferta" },
 ];
 
 export default function Home() {
@@ -75,7 +75,7 @@ export default function Home() {
 
       <main id="top">
         <section className="relative isolate overflow-hidden bg-[#1f2b25] text-[#f3f1ea]">
-          <div className="absolute inset-0 bg-[url('/manus-storage/alameda-hero_d0beba7a.jpg')] bg-cover bg-center opacity-55" />
+          <div className="absolute inset-0 bg-[url('/alameda-headshop/images/alameda-hero.jpg')] bg-cover bg-center opacity-55" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#1f2b25] via-[#1f2b25]/80 to-transparent" />
           <div className="relative mx-auto grid min-h-[610px] max-w-[1320px] items-center px-5 py-20 lg:grid-cols-[1.08fr_0.92fr] lg:px-10 lg:py-28">
             <div className="max-w-[650px]">
