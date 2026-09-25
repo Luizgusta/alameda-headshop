@@ -20,7 +20,7 @@ const categories = [
 ];
 
 const products = [
-  { name: "Piteira Alameda Large", category: "Acessórios", price: "R$ 8,00", oldPrice: "", image: "./images/https://github.com/Luizgusta/alameda-headshop/blob/main/client/public/images/imgi_1_Alameda_Headshop_152605.png", tag: "Alameda" },
+  { name: "Piteira Alameda Large", category: "Acessórios", price: "R$ 8,00", oldPrice: "", image: "./images/produto-produto-seda-acrema.jpg" },
   { name: "Seda Papelito Brown King Size", category: "Sedas", price: "R$ 4,00", oldPrice: "", image: "./images/alameda-category-sedas.jpg", tag: "Essencial" },
   { name: "Tabaco Santorini 25g", category: "Tabacos", price: "R$ 25,00", oldPrice: "", image: "./images/alameda-category-tabaco.jpg", tag: "Curadoria" },
   { name: "Kit Brown + Piteira", category: "Combos", price: "R$ 7,00", oldPrice: "R$ 9,00", image: "./images/alameda-category-sedas.jpg", tag: "Oferta" },
