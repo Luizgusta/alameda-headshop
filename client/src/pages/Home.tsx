@@ -75,7 +75,7 @@ export default function Home() {
 
       <main id="top">
         <section className="relative isolate overflow-hidden bg-[#1f2b25] text-[#f3f1ea]">
-          <div className="absolute inset-0 bg-[url('/alameda-headshop/images/banner-hero.jpg')] bg-cover bg-center opacity-55" />
+          <div className="absolute inset-0 bg-[url('/alameda-headshop/images/banner-hero.jpg')] bg-cover bg-center opacity-30" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#1f2b25] via-[#1f2b25]/80 to-transparent" />
           <div className="relative mx-auto grid min-h-[610px] max-w-[1320px] items-center px-5 py-20 lg:grid-cols-[1.08fr_0.92fr] lg:px-10 lg:py-28">
             <div className="max-w-[650px]">
