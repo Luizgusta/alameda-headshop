@@ -14,9 +14,9 @@ import {
 } from "lucide-react";
 
 const categories = [
-  { label: "Sedas & papéis", image: "./images/papelitos.jpg", tone: "from-[#6b4f35]" },
+  { label: "Sedas & papéis", image: "./images/papelitos.jpg", tone: "from-[#1e312a]" },
   { label: "Acessórios", image: "./images/acessorios-category.jpg", tone: "from-[#1e312a]" },
-  { label: "Tabacos", image: "./images/tabacos-category.jpg", tone: "from-[#8c5534]" },
+  { label: "Tabacos", image: "./images/tabacos-category.jpg", tone: "from-[#1e312a]" },
 ];
 
 const products = [
