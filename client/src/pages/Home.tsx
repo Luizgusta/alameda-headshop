@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import {
   ArrowRight,
   Check,
+  MessageCircle,
   ChevronDown,
   Heart,
   Menu,
@@ -43,6 +44,7 @@ export default function Home() {
   const addToCart = () => setCart((value) => value + 1);
   const whatsappNumber = "5515996929387";
   const whatsappMessage = (product: (typeof products)[number]) => `Olá! Quero pedir o produto: ${product.name} — ${product.price}.`;
+  const whatsappContactUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Olá! Vim pelo site da Alameda HeadShop e gostaria de mais informações.")}`;
 
   return (
     <div className="min-h-screen bg-[#f3f1ea] text-[#1f2b25]">
@@ -102,6 +104,7 @@ export default function Home() {
       </main>
 
       <footer className="bg-[#1f2b25] px-5 py-14 text-[#f3f1ea] lg:px-10"><div className="mx-auto grid max-w-[1320px] gap-12 md:grid-cols-[1.3fr_1fr_1fr_1fr]"><div><div className="flex items-center gap-3"><span className="grid h-10 w-10 place-items-center rounded-full bg-[#e6b86b] text-sm font-black text-[#1f2b25]">a.</span><span className="font-display text-xl">alameda</span></div><p className="mt-6 max-w-xs text-sm leading-6 text-[#aebbb0]">Seu ritual, sua assinatura. Produtos selecionados e envio discreto.</p></div><div><p className="eyebrow text-[#e6b86b]">Navegue</p><div className="mt-5 space-y-3 text-sm text-[#aebbb0]"><a className="block hover:text-white" href="#colecao">Coleção</a><a className="block hover:text-white" href="#categorias">Categorias</a><a className="block hover:text-white" href="#alameda">Sobre a Alameda</a></div></div><div><p className="eyebrow text-[#e6b86b]">Atendimento</p><div className="mt-5 space-y-3 text-sm text-[#aebbb0]"><a className="block hover:text-white" href="tel:+5515996929387">(15) 99692-9387</a><a className="block break-all hover:text-white" href="mailto:contato.alamedaweed@gmail.com">contato.alamedaweed@gmail.com</a><span className="block">Seg — Sex · 9h às 18h</span></div></div><div><p className="eyebrow text-[#e6b86b]">Receba novidades</p><p className="mt-5 text-sm leading-6 text-[#aebbb0]">Lançamentos e achados da Alameda, sem spam.</p><div className="mt-4 flex border-b border-[#aebbb0]/40 pb-2"><input placeholder="Seu melhor e-mail" className="min-w-0 flex-1 bg-transparent text-sm outline-none placeholder:text-[#7f8f83]" /><button aria-label="Assinar novidades"><ArrowRight size={16} className="text-[#e6b86b]" /></button></div></div></div><div className="mx-auto mt-14 flex max-w-[1320px] flex-col justify-between gap-3 border-t border-[#aebbb0]/20 pt-6 text-[10px] uppercase tracking-[0.16em] text-[#7f8f83] sm:flex-row"><span>© 2026 Alameda Headshop · CNPJ 42.093.002/0001-12</span><span>Pagamento seguro · Privacidade em primeiro lugar</span></div></footer>
+      <a href={whatsappContactUrl} target="_blank" rel="noreferrer" aria-label="Falar com a Alameda HeadShop pelo WhatsApp" className="fixed bottom-5 right-5 z-50 flex items-center gap-3 rounded-full bg-[#25D366] px-4 py-3 text-white shadow-[0_12px_30px_rgba(37,211,102,0.35)] transition duration-200 hover:scale-105 hover:bg-[#1ebe5d] active:scale-95"><MessageCircle size={22} strokeWidth={2.2} /><span className="hidden text-xs font-bold uppercase tracking-[0.12em] sm:inline">Fale conosco</span></a>
     </div>
   );
 }
