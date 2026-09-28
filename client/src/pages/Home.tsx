@@ -58,7 +58,11 @@ export default function Home() {
             {menuOpen ? <X size={21} /> : <Menu size={21} />}
           </button>
           <a href="#top" className="group flex items-center gap-3" aria-label="Alameda Headshop">
-            <span className="grid h-10 w-10 place-items-center rounded-full bg-[#1f2b25] text-sm font-black text-[#e6b86b] transition-transform group-hover:rotate-12">a.</span>
+<img
+  src="./images/imgi_1_Alameda_Headshop_152605.png"
+  alt="Logo Alameda HeadShop"
+  className="h-14 w-auto object-contain"
+ />
             <span className="hidden leading-none sm:block"><strong className="block font-display text-xl tracking-[-0.04em]">alameda</strong><small className="mt-1 block text-[9px] uppercase tracking-[0.28em] text-[#65736a]">headshop</small></span>
           </a>
           <nav className={`${menuOpen ? "absolute left-0 right-0 top-[74px] flex" : "hidden"} flex-col gap-5 border-b border-[#1f2b25]/10 bg-[#f3f1ea] px-5 py-6 text-xs font-bold uppercase tracking-[0.16em] lg:static lg:flex lg:flex-row lg:items-center lg:border-0 lg:bg-transparent lg:p-0`}>
